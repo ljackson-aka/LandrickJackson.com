@@ -5,51 +5,123 @@ body {
     color: #dcdcdc;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 /* Header */
 header {
     background-color: #252526;
-    padding: 20px;
+    width: 100%;
     text-align: center;
+    padding: 20px 0;
 }
 header h1 {
     color: #569cd6;
+    font-size: 2.5rem;
 }
 header p {
     color: #9cdcfe;
+    font-size: 1.2rem;
 }
 
 /* Navigation */
 nav {
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #2d2d2d;
+    width: 100%;
 }
 nav a {
     color: #dcdcdc;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 nav a:hover {
-    color: #00bcd4;
+    background: #569cd6;
+    color: #121212;
 }
 
-/* Sections */
+/* Centered Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    padding: 50px 20px;
+}
+
+/* Section Styling */
 section {
-    padding: 50px;
-    max-width: 1000px;
-    margin: 0 auto;
+    background: #252526;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+section h2 {
+    font-size: 1.8rem;
+    color: #dcdcaa;
+    margin-bottom: 15px;
+}
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-/* Python Syntax Theme */
-.python-keyword { color: #569cd6; }  /* Keywords like 'def', 'class' */
-.python-function { color: #dcdcaa; }  /* Function names */
-.python-string { color: #ce9178; }  /* Strings */
-.python-comment { color: #6a9955; font-style: italic; }  /* Comments */
+/* Footer */
+footer {
+    background: #2d2d2d;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+}
+footer p {
+    color: #9cdcfe;
+}
 
-/* Light Mode Toggle */
+/* Light Mode */
 .light-mode {
     background-color: #f4f4f4;
     color: #121212;
+}
+.light-mode nav {
+    background-color: #e0e0e0;
+}
+.light-mode section {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* Button */
+button {
+    background: #569cd6;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background: #3a8bbb;
+}
+
+.project-card {
+    background: #2d2d2d;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
