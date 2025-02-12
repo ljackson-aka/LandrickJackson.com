@@ -125,3 +125,37 @@ button:hover {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* Center and structure the portfolio section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Project Card Design */
+.project-card {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Project Card Text */
+.project-card h3 {
+    color: #00bcd4;
+    font-size: 20px;
+}
+
+.project-card p {
+    color: #dcdcaa;
+    font-size: 1rem;
+    font-family: 'Fira Code', monospace;
+}
