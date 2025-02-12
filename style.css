@@ -214,3 +214,48 @@ button:hover {
 .contact-card a:hover {
     text-decoration: underline;
 }
+
+/* Center Portfolio Title */
+.portfolio-title {
+    text-align: center;
+    font-size: 28px;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+/* Portfolio Card Container (Matches Contact Page) */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Portfolio Cards (Same as Contact Cards) */
+.portfolio-card {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    text-align: center;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Portfolio Card Text */
+.portfolio-card h3 {
+    color: #00bcd4;
+    font-size: 20px;
+}
+
+.portfolio-card p {
+    color: #dcdcaa;
+    font-size: 1rem;
+    font-family: 'Fira Code', monospace;
+}
