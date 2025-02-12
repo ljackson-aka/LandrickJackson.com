@@ -5,11 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landrick Jackson | Network Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Function to display a greeting based on the time of day
+        function displayGreeting() {
+            const hours = new Date().getHours();
+            let greeting;
+
+            if (hours < 12) {
+                greeting = "Good morning!";
+            } else if (hours < 18) {
+                greeting = "Good afternoon!";
+            } else {
+                greeting = "Good evening!";
+            }
+
+            document.getElementById("greeting").textContent = greeting;
+        }
+
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            document.body.classList.toggle("light-mode");
+        }
+
+        // Run the greeting function when the page loads
+        window.onload = displayGreeting;
+    </script>
+    <style>
+        /* Light mode styles */
+        .light-mode {
+            background-color: #f4f4f4;
+            color: #121212;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Landrick A. Jackson</h1>
         <p>Network Engineer</p>
+        <p id="greeting"></p> <!-- Dynamic greeting -->
     </header>
 
     <nav>
@@ -24,6 +57,8 @@
         I played organized football from the time I was 7 through my senior year in high school.</p>
         <p>After leaving UCF, I joined the United States Marine Corps, where I ended up in Afghanistan looking for bombs. After separating honorably, I went back home to Florida and enrolled back in college. After a year in Florida, I moved back to California, where I ended up graduating from California State University, Long Beach, where I also completed half of a master's in Medieval Literature.</p>
     </section>
+
+    <button onclick="toggleDarkMode()">Toggle Light Mode</button>
 
     <footer>
         <p>&copy; 2025 LJ. All rights reserved.</p>
