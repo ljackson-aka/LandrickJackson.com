@@ -159,3 +159,58 @@ button:hover {
     font-size: 1rem;
     font-family: 'Fira Code', monospace;
 }
+
+/* Center "Get in Touch" Title */
+.contact-title {
+    text-align: center;
+    font-size: 28px;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+/* Contact Card Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Individual Contact Cards */
+.contact-card {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    text-align: center;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Card Text */
+.contact-card h3 {
+    color: #00bcd4;
+    font-size: 20px;
+}
+
+.contact-card p {
+    color: #dcdcaa;
+    font-size: 1rem;
+    font-family: 'Fira Code', monospace;
+}
+
+.contact-card a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
